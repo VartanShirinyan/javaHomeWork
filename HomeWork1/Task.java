@@ -6,26 +6,26 @@ import java.util.Scanner;
 
 public class Task {
     public static void main(String[] args) {
-        try (Scanner sc = new Scanner(System.in)) {
-            System.out.print("Введите число n для вычисления треугольного числа: ");
-            int n = sc.nextInt();
+        Scanner sc = new Scanner(System.in);
 
-            int triangularNumber = 0;
-            for (int i = 1; i <= n; i++) {
-                triangularNumber = triangularNumber + i;
-            }
+        System.out.print("Введите число n для вычисления треугольного числа: ");
+        int n = sc.nextInt();
 
-            System.out.println("Треугольное число " + n + " равно " + triangularNumber);
-
-            System.out.print("Введите число n факториала: ");
-            int n2 = sc.nextInt();
-
-            int factorial = 1;
-            for (int i = 1; i <= n2; i++) {
-                factorial *= i;
-            }
-
-            System.out.println(n2 + "! = " + factorial);
+        int triangularNumber = 0;
+        for (int i = 1; i <= n; i++) {
+            triangularNumber = triangularNumber + i;
         }
+
+        System.out.println("Треугольное число " + n + " равно " + triangularNumber);
+
+        System.out.print("Введите число n факториала: ");
+        int n2 = sc.nextInt();
+
+        int factorial = 1;
+        for (int i = 1; i <= n2; i++) {
+            factorial *= i;
+        }
+
+        System.out.println(n2 + "! = " + factorial);
     }
 }

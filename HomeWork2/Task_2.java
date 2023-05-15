@@ -27,42 +27,42 @@ import java.util.*;
 
 public class Task_2 {
     public static void main(String[] args) {
-        try (Scanner sc = new Scanner(System.in)) {
-            System.out.println("Введите количество строк в книге:");
-            int n = sc.nextInt();
-            sc.nextLine();
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Введите количество строк в книге:");
+        int n = sc.nextInt();
+        sc.nextLine();
 
-            String[] book = new String[n];
-            System.out.println("Введите строки книги:");
-            for (int i = 0; i < n; i++) {
-                book[i] = sc.nextLine();
-            }
+        String[] book = new String[n];
+        System.out.println("Введите строки книги:");
+        for (int i = 0; i < n; i++) {
+            book[i] = sc.nextLine();
+        }
 
-            System.out.println("Введите количество замен:");
-            int m = sc.nextInt();
-            sc.nextLine();
+        System.out.println("Введите количество замен:");
+        int m = sc.nextInt();
+        sc.nextLine();
 
-            Map<String, String> replacements = new HashMap<>();
-            System.out.println("Введите замены в формате 'слово - замена':");
-            for (int i = 0; i < m; i++) {
-                String[] line = sc.nextLine().split(" - ");
-                replacements.put(line[0], line[1]);
-            }
+        Map<String, String> replacements = new HashMap<>();
+        System.out.println("Введите замены в формате 'слово - замена':");
+        for (int i = 0; i < m; i++) {
+            String[] line = sc.nextLine().split(" - ");
+            replacements.put(line[0], line[1]);
+        }
 
-            for (int i = 0; i < n; i++) {
-                String[] words = book[i].split(" ");
-                for (int j = 0; j < words.length; j++) {
-                    String word = words[j].toLowerCase();
-                    if (replacements.containsKey(word)) {
-                        String replacement = replacements.get(word);
-                        if (Character.isUpperCase(words[j].charAt(0))) {
-                            replacement = capitalize(replacement);
-                        }
-                        words[j] = replacement;
+        for (int i = 0; i < n; i++) {
+            String[] words = book[i].split(" ");
+            for (int j = 0; j < words.length; j++) {
+                String word = words[j].toLowerCase();
+                if (replacements.containsKey(word)) {
+                    String replacement = replacements.get(word);
+                    if (Character.isUpperCase(words[j].charAt(0))) {
+                        replacement = capitalize(replacement);
                     }
+                    words[j] = replacement;
                 }
-                System.out.println(String.join(" ", words));
             }
+            System.out.println(String.join(" ", words));
         }
     }
 
