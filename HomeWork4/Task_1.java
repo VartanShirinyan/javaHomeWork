@@ -1,5 +1,5 @@
 package HomeWork4;
-/*Пусть дан LinkedList с несколькими элементами. 
+/* Пусть дан LinkedList с несколькими элементами. 
 Реализуйте метод, который вернет “перевернутый” список. 
 Постараться не обращаться к листу по индексам. */
 import java.util.LinkedList;
@@ -26,4 +26,3 @@ public class Task_1 {
         System.out.println(inverted);
     }
 }
-
