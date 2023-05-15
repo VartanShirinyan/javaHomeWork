@@ -2,7 +2,6 @@ package HomeWork3;
 
 import java.util.ArrayList;
 import java.util.Collections;
-
 /*
 Задан целочисленный список ArrayList. 
 Найти минимальное, максимальное и среднее арифметическое из этого списка. Collections.max() 

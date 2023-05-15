@@ -45,4 +45,3 @@ public class Task_7 {
         sc.close();
     }
 }
-

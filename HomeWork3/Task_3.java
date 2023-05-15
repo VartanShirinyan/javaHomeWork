@@ -4,7 +4,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.ArrayList;
 import java.util.HashMap;
-
 /*
  Заполнить список названиями планет Солнечной системы в произвольном порядке с повторениями. 
  Вывести название каждой планеты и количество его повторений в списке.

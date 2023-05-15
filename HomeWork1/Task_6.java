@@ -14,7 +14,6 @@ Sample Output:
 1
 3
 */
-
 import java.util.Scanner;
 
 public class Task_6 {
