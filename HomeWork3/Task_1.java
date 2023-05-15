@@ -2,7 +2,7 @@ package HomeWork3;
 
 import java.util.ArrayList;
 
-/*Пусть дан произвольный список целых чисел, удалить из него четные числа */
+/* Пусть дан произвольный список целых чисел, удалить из него четные числа */
 public class Task_1 {
     public static void main(String[] args) {
         ArrayList<Integer> numbers = new ArrayList<Integer>();
